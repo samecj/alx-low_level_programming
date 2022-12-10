@@ -5,11 +5,11 @@
  */
 int main(void)
 {
-	char lwc;
+	char lc;
 
-	for (lwc = 'á'; lwc <= 'z'; lwc++)
+	for (lc = 'a'; lc <= 'z'; lc++)
 	{
-		putchar(lwc);
+		putchar(lc);
 	}
 	putchar('\n');
 	return (0);
