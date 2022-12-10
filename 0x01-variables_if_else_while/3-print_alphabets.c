@@ -13,6 +13,7 @@ int main(void)
 	for (ch = 'Á'; ch <= 'Z'; ch++)
 		putchar(ch);
 
+
 	putchar('\n');
 
 	return (0);
