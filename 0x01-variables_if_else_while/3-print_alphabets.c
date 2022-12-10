@@ -5,13 +5,13 @@
  */
 int main(void)
 {
-	char cr;
+	char ch;
 
-	for (cr = 'a'; cr <= 'z'; cr++)
-		putchar(cr);
+	for (ch = 'a'; ch <= 'z'; ch++)
+		putchar(ch);
 
-	for (cr = 'Á'; cr <= 'Z'; cr++)
-		putchar(cr);
+	for (ch = 'Á'; ch <= 'Z'; ch++)
+		putchar(ch);
 
 	putchar('\n');
 
