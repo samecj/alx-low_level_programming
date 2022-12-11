@@ -5,27 +5,21 @@
  */
 int main(void)
 {
-	int i, j, k, l;
+	int i, j, k;
+	int arr[] = {1, 2, 3};
 
-	i = 0;
-	while (i < 1000)
+	for (i = 0; i < 3; i++)
 	{
-		j = i / 100;
-		k = (i / 10) % 10;
-		l = i % 100;
-		if (j < k && k < l)
+		for (j = 0; j < 3; j++)
 		{
-			putchar(l + '0');
-			putchar(k + '0');
-			putchar(j + '0');
-		if (i < 789)
-		{
-			putchar(',');
-			putchar(' ');
+			for (k = 0; k < 3; k++)
+			{
+				if (i != j && j != k && k != i)
+				{
+					printf("[%d %d %d]\n", arr[i], arr[j], arr[k]);
+				}
+			}
 		}
 	}
-	i++;
-	}
-	putchar('\n');
 	return (0);
 }
