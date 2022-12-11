@@ -6,18 +6,19 @@
 int main(void)
 {
 	int i, j, k;
-	int arr[] = {1, 2, 3};
+	char digit[4];
 
-	for (i = 0; i < 3; i++)
+	for (i = 0; i < 8; i++)
 	{
-		for (j = 0; j < 3; j++)
+		for (j = i + 1; j < 9; j++)
 		{
-			for (k = 0; k < 3; k++)
+			for (k = j + 1; k < 10; k++)
 			{
-				if (i != j && j != k && k != i)
-				{
-					printf("[%d %d %d]\n", arr[i], arr[j], arr[k]);
-				}
+				digit[0] = i + '0';
+				digit[1] = j + '0';
+				digit[2] = k + '0';
+				digit[3] = '\0';
+				printf("%s\n", digit);
 			}
 		}
 	}
