@@ -11,7 +11,7 @@ for (x = 0; x <= 8; x++)
 {
 	for (y = 1; y <= 9; y++)
 	{
-		if (x != y)
+		if (x < y)
 		{
 			putchar(x + '0');
 			putchar(y + '0');
