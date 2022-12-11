@@ -5,22 +5,13 @@
  */
 int main(void)
 {
-	int i, j, k;
-	char digit[4];
+	int h = 0, t = 1, u = 2;
 
-	for (i = 0; i < 8; i++)
+	while ((h <= 7) || (t <= 8) || (u <= 9))
 	{
-		for (j = i + 1; j < 9; j++)
-		{
-			for (k = j + 1; k < 10; k++)
-			{
-				digit[0] = i + '0';
-				digit[1] = j + '0';
-				digit[2] = k + '0';
-				digit[3] = '\0';
-				printf("%s\n", digit);
-			}
-		}
+		printf("%d%d%d, ", h, t, u);
+		u != 9 ? ++u : (t != 8 ? (++t, u = t + 1) : (++h, t = h + 1, u = t + 1));
+
 	}
 	return (0);
 }
