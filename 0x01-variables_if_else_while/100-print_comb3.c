@@ -26,5 +26,6 @@ for (x = 0; x <= 8; x++)
 		}
 	}
 }
+putchar('\n');
 return (0);
 }
