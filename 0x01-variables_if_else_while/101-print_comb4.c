@@ -10,7 +10,7 @@ int main(void)
 	while ((h <= 7) || (t <= 8) || (u <= 9))
 	{
 		if (h == 7 && t == 8 && u == 9)
-			printf("%d%d%d ", h, t, u);
+			printf("%d%d%d", h, t, u);
 		else
 			printf("%d%d%d, ", h, t, u);
 
