@@ -17,5 +17,6 @@ int main(void)
 		u != 9 ? ++u : (t != 8 ? (++t, u = t + 1) : (++h, t = h + 1, u = t + 1));
 
 	}
+	printf("\n");
 	return (0);
 }
