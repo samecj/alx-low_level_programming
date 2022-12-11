@@ -9,9 +9,10 @@ int main(void)
 
 	while ((h <= 7) || (t <= 8) || (u <= 9))
 	{
-		printf("%d%d%d, ", h, t, u);
-		if (h != 7 && t != 8 && u != 9)
-			printf(",");
+		if (h == 7 && t == 8 && u == 9)
+			printf("%d%d%d ", h, t, u);
+		else
+			printf("%d%d%d, ", h, t, u);
 
 		u != 9 ? ++u : (t != 8 ? (++t, u = t + 1) : (++h, t = h + 1, u = t + 1));
 
