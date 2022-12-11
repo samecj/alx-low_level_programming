@@ -7,21 +7,25 @@ int main(void)
 {
 int x = 1, y = 2;
 
-while ((x <= 8) && (y <= 9))
+for (x = 0; x <= 8; x++)
 {
-	putchar(x + '0');
-	putchar(y + '0');
-	if (x == 8)
+	for (y = 1; y <= 9; y++)
 	{
-		putchar(' ');
+		if (x != y)
+		{
+			putchar(x + '0');
+			putchar(y + '0');
+			if (x == 8 && y == 9)
+			{
+				putchar(' ');
+			}
+			else
+			{
+				putchar(',');
+				putchar(' ');
+			}
+		}
 	}
-	else
-	{
-		putchar(',');
-		putchar(' ');
-	}
-	x++;
-	y++;
 }
 return (0);
 }
