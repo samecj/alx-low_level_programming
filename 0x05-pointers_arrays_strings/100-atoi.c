@@ -9,4 +9,5 @@ int _atoi(char *s)
 {
 	int x = *s;
 	printf("%d", x);
+	return (x);
 }
