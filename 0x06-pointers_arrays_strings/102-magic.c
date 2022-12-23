@@ -1,10 +1,5 @@
 #include <stdio.h>
 
-/**
- * main - print p
- * Return: Always 0
- */
-
 int main(void)
 {
 	int n;
